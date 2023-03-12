@@ -42,7 +42,127 @@
         "description": "اسم البوت الخاص بك",
         "value": "⁪⁬",
         "required": true
+      },{
+    "name": "بوت القران الكريم",
+    "description": "صنع بواسطه احمد",
+    "logo": "https://telegra.ph/file/e2d6d526daa22fceb8681.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "Shizuka",
+    "telegram-music-bot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "stack": "container",
+    "env": {
+      "API_ID": {
+        "description": "ادخل ايبي ايدي ",
+        "value": "",
+        "required": true
       },
+      "API_HASH": {
+        "description": "ادخل ايبي هاش",
+        "value": "",
+        "required": true
+      },
+      "AUTO_LEAVING_ASSISTANT": {
+        "description": "إذا كنت تريد أن يغادر مساعدك جميع الدردشات تلقائيًا بعد مرور بعض الوقت.. اتركها كما هيا",
+        "value": "True",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "توكن بوتك",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "قاعده بيانات mongodb.",
+        "value": "",
+        "required": true
+      },
+      "MUSIC_BOT_NAME": {
+        "description": "اسم البوت الخاص بك",
+        "value": "⁪⁬",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ايدي مالك البوت.",
+        "value": "5463205082",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "كود الجلسه .",
+        "value": "",
+        "required": true
+      },
+      "SUPPORT_GROUP": {
+        "description": "قروب الدعم",
+        "value": "https://t.me/snajxjakakkakzksksiak",
+        "required": false
+      },
+      "SUPPORT_CHANNEL": {
+        "description": "قناة التحديثات",
+        "value": "https://t.me/snajxjakakkakzksksiak",
+        "required": false
+      },
+      "PING_IMG_URL": {
+        "description": "الصورة التي ستظهر عندما تعطي /ping cmd للبوت..",
+        "value": "",
+        "required": false
+      },
+      "START_IMG_URL": {
+        "description": "الصورة التي ستظهر عند امر /start.",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_API_KEY": {
+        "description": "مفتاح API لحساب Heroku الخاص بك",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "اسم برنامج الروبوت / تطبيق heroku الخاص بك",
+        "value": "",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "description": "معرّف مجموعة السجل الخاص بك ، أضف الروبوت الخاص بك وقم بالترقية كمسؤول مع كامل الحقوق !..",
+        "value": "",
+        "required": true
+      },
+      "UPSTREAM_REPO": {
+        "description": "If you dont know this, Leave as it is",
+        "value": "https://github.com/ahmedf0/Quran",
+        "required": true
+      },
+      "UPSTREAM_BRANCH": {
+        "description": "Upstream Repo's Branch Name",
+        "value": "main",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "Eco"
+          }
+      },
+      "stack": "container"
+  }
+
       "OWNER_ID": {
         "description": "ايدي مالك البوت.",
         "value": "5463205082",
